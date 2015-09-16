@@ -6,7 +6,7 @@
 </p>
 <p class="link">
   <%= Spree.t("oreder_full_details")%>
-  <%= link_to(order_url(@shipment.order, :host => Spree::Config[:site_url]), order_url(@shipment.order, :host => Spree::Config[:site_url])) %>
+  <%= link_to(order_url(@shipment.order, :host => Spree::Store.current.url), order_url(@shipment.order, :host => Spree::Store.current.url)) %>
 </p>
 <%= render :partial => 'spree/shared/email/shipment_details', :locals => {:shipment => @shipment} %>
 <%= render :partial => 'spree/shared/email/shipment_tracking', :locals => { :shipment => @shipment} %>
