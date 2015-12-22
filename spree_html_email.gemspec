@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.requirements << 'none'
 
   s.add_dependency 'spree_core', '~> 3.0.0'
-  s.add_dependency 'premailer-rails', '~> 1.7.0'
+  s.add_dependency 'premailer-rails', '~> 1.8.2'
 
   s.add_development_dependency 'sass-rails', '~> 4.0.2'
   s.add_development_dependency 'sqlite3'
